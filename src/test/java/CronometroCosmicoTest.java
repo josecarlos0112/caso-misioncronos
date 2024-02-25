@@ -1,7 +1,6 @@
-package src;
 import java.time.Duration;
 
-public class CronometroCosmico {
+public class CronometroCosmicoTest {
     // Método para convertir tiempo de la Tierra al nuevo planeta
     public static Duration convertirATiempoNuevoPlaneta(Duration tiempoTierra) {
         // Supongamos que la conversión es simplemente un factor de escala
