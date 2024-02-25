@@ -5,30 +5,15 @@ import src.RecursosYSuministros;
 public class RecursosYSuministrosTest {
 
     @Test
-    public void testCalcularConsumoRecursos() {
-        int[] consumos = {10, 20, 30, 40, 50};
-        int sumaEsperada = 150;
-        Assertions.assertEquals(sumaEsperada, RecursosYSuministros.calcularConsumoRecursos(consumos));
+    public void testCalcularConsumo() {
+        RecursosYSuministros recursos = new RecursosYSuministros(10, 10, 10);
+        double expected = 300;
+        Assertions.assertEquals(expected, recursos.calcularConsumo(10));
     }
 
     @Test
-    public void testCalcularConsumoPromedio() {
-        int[] consumos = {10, 20, 30, 40, 50};
-        double promedioEsperado = 30.0;
-        Assertions.assertEquals(promedioEsperado, RecursosYSuministros.calcularConsumoPromedio(consumos));
-    }
-
-    @Test
-    public void testEncontrarConsumoMinimo() {
-        int[] consumos = {10, 20, 30, 40, 50};
-        int minEsperado = 10;
-        Assertions.assertEquals(minEsperado, RecursosYSuministros.encontrarConsumoMinimo(consumos));
-    }
-
-    @Test
-    public void testEncontrarConsumoMaximo() {
-        int[] consumos = {10, 20, 30, 40, 50};
-        int maxEsperado = 50;
-        Assertions.assertEquals(maxEsperado, RecursosYSuministros.encontrarConsumoMaximo(consumos));
+    public void testAlertaRecursos() {
+        RecursosYSuministros recursos = new RecursosYSuministros(5, 10, 10);
+        recursos.alertaRecursos(); // This should print "Alerta: Los recursos están bajos"
     }
 }
