@@ -1,2 +1,2 @@
-public class SistemaAlertaMonitoreo {
+public class SistemaAlertaMonitoreoTest {
 }

@@ -1,2 +1,2 @@
-public class ComunicadorInterplanetario {
+public class ComunicadorInterplanetarioTest {
 }

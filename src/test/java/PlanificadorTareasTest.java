@@ -1,2 +1,2 @@
-public class PlanificadorTareas {
+public class PlanificadorTareasTest {
 }

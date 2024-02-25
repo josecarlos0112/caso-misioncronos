@@ -1,2 +1,2 @@
-public class NavegadorEstelar {
+public class NavegadorEstelarTest {
 }
